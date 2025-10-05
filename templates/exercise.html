@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ title }}</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin: 50px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px;
+        }
+        button:hover {
+            background: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>{{ title }}</h1>
+    <p>{{ message }}</p>
+    
+    <!-- TODO: Add your name here -->
+    <p>Created by: [YOUR NAME HERE]</p>
+    
+    <!-- TODO: Add a simple button function -->
+    <button onclick="myFunction()">Click Me!</button>
+    
+    <div id="result"></div>
+    
+    <script>
+        // TODO: Add your button function here
+        function myFunction() {
+            document.getElementById('result').innerHTML = '<p style="color: green;">Button clicked!</p>';
+        }
+    </script>
+</body>
+</html>
